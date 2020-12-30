@@ -349,7 +349,7 @@
             border-left: 1px solid #555;
         }
 
-        .main-item .opponent {
+        .main-item > .opponent {
             float: left;
             line-height: 1.3em;
         }
@@ -368,7 +368,7 @@
             line-height: 1.3em;
         }
 
-        .main-item .myself .message_box {
+        .main-item  .myself  .message_box {
             max-width: 100%;
             font-size: 17px;
             background: #fff;
@@ -387,26 +387,29 @@
         .main-item .clear {
             clear: both;
         }
+
+        /* 会話部分ここまで↑ */
+        /* 会話送信部分ここから↓ */
         
         .main-item #send {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             background-color: #eee;
             border: 1px solid #ddd;
-        }
+            width:100%;
+            height:20vh;
+            }
 
         .main-item #exampleFormControlTextarea1 {
             line-height: 18px;
-            height: 60px;
-            width: 800px;
+            height: 100%;
+            width: 60%;
             border: 1px solid #ccc;
             border-radius: 5px;
             -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2) inset;
             box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2) inset;
         }
 
-        /* 会話部分ここまで↑ */
-        /* 会話送信部分ここから↓ */
 
         .main-item #btn1 {
             height: 50px;
@@ -437,6 +440,30 @@
             background-color: gray;
             border: 1px solid #bbb;
             border-radius: 5px;
+        }
+
+        .btn-mouseover:hover + .mouseover__box{
+            display: block;
+        }
+        .mouseover__box:hover{
+            display: block;
+        }
+        .mouseover__box{
+            display: none;
+            position: absolute;
+            z-index:1;
+            left:30%;
+            width: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top:5px;
+            vertical-align: middle;            
+            font-size: 13px;
+            background-color: #fff;
+            border: 5px solid #ccc;
+            box-sizing: border-box;
+            text-align:center;
+            border-radius: 10px;
         }
         /* 会話送信部分ここまで↑ */
     </style>

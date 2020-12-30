@@ -175,7 +175,7 @@ export default class Talk extends Component {
                                 </div>
                                 <div class="message_box m-2">
                                     <div class="message_content p-3">
-                                        <div class="message_text">メッセージ</div>
+                                        <div class="message_text">メッセージaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
                                     </div>
                                 </div>
                                 <p class="dateTime float-right">2020/11/12</p>
@@ -189,7 +189,7 @@ export default class Talk extends Component {
                                 </div>
                                 <div class="message_box m-2">
                                     <div class="message_content p-3">
-                                        <div class="message_text">メッセージ</div>
+                                        <div class="message_text">メッセージjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
                                     </div>
                                 </div>
                                 <p class="dateTime float-left">2020/11/11</p>
@@ -210,12 +210,12 @@ export default class Talk extends Component {
                                 <div className="mouseover__box" style={videocontext}>
                                     <p>ビデオ通話</p>
                                 </div>
-                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2  btn-mouseover"><input id="btn2" type="file" onChange={this.filehandleChange} accept="image/*"></input><i className='fas fa-folder-open'></i></label>
+                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2  btn-mouseover"><input id="btn2" type="file" accept="image/*"></input><i className='fas fa-folder-open'></i></label>
                                 <div className="mouseover__box" style={filecontext}>
                                     <p>ファイルをアップロード<br></br>(イメージファイルのみ可)</p>
                                 </div>
                                 <div className="form-group col-6">
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={this.state.value} onChange={this.handleChange}></textarea>
+                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <button id="btn3" type="submit" className="btn btn-primary col-2 btn-mouseover"><i className="fas fa-paper-plane"></i></button>
                                 <div className="mouseover__box" style={submitcontext}>
