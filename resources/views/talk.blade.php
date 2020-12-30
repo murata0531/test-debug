@@ -24,6 +24,8 @@
         html,
         body {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             height: 100vh;
             width: 100vw;
             padding: 0;
@@ -59,6 +61,8 @@
 
         .side-menu>ul>li>a {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             align-items: center;
 
         }
@@ -66,6 +70,8 @@
         /*main-menu: folder +  main-contents*/
         .main-menu {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             height: 100vh;
             width: calc(100vw - 18vw);
         }
@@ -105,7 +111,11 @@
             height: 80px;
             width: 100%;
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             align-items: center;
+            -webkit-box-align: center;
+	        -ms-flex-align: center;
             background-color: #e9f2f3;
         }
 
@@ -130,10 +140,13 @@
             display: flex;
             flex-flow: column;
             justify-content: space-around;
+            -ms-flex-pack: distribute;
         }
 
         .text-list {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             position: relative;
             /* top: 15px; */
         }
@@ -188,6 +201,8 @@
             background-color: #E9F2F3;
             color: #8aa0a0;
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             margin-left: 0;
             position: fixed;
         }
@@ -240,6 +255,8 @@
 
         .my-header-items {
             display:flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             flex-flow:row;
             width:60%;
             /* width:60%;
@@ -248,6 +265,8 @@
 
         .my-header-items-section {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             flex-flow: column wrap;
             margin-right:10px;
             align-items: center;
@@ -305,6 +324,8 @@
         } */
         .inner-circle {
             display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             width: 100%;
             position: relative;
             height: 20px;
