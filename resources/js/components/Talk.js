@@ -169,31 +169,30 @@ export default class Talk extends Component {
 
                             {/* <!-- 会話挿入空間 --> */}
 
-                            <div class="myself">
-                                <div class="faceicon">
-                                    <img src="" width="50" height="50" class="rounded-circle align-middle img-responsive float-right"></img>
+                            <div class="opponent">
+                            '   <div class="faceicon">
+                                    <img src="../" width="50" height="50" class="rounded-circle align-middle img-responsive float-left"></img><p className="name font-weight-bold m-0">開発部長</p>
                                 </div>
                                 <div class="message_box m-2">
                                     <div class="message_content p-3">
-                                        <div class="message_text"><a href=""><img src='' target="_blank" rel="noopener noreferrer"></img></a></div>
+                                        <div class="message_text">メッセージ</div>
                                     </div>
                                 </div>
-                                <p class="dateTime float-left">2020/11/11</p>
+                                <p class="dateTime float-right">2020/11/12</p>
                             </div>
                             <div class="clear"></div>
 
 
-
-                            <div class="opponent">
+                            <div class="myself">
                                 <div class="faceicon">
-                                    <img src="..'/" width="50" height="50" class="rounded-circle align-middle img-responsive float-left"></img><p className="name font-weight-bold m-0">ai</p>
+                                    <img src="../" width="50" height="50" class="rounded-circle align-middle img-responsive float-right"></img>
                                 </div>
                                 <div class="message_box m-2">
                                     <div class="message_content p-3">
-                                        <div class="message_text"><a href=''><img src='' target="_blank" rel="noopener noreferrer"></img></a></div>
+                                        <div class="message_text">メッセージ</div>
                                     </div>
                                 </div>
-                                <p class="dateTime float-right">2020/11/22</p>
+                                <p class="dateTime float-left">2020/11/11</p>
                             </div>
                             <div class="clear"></div>
 
