@@ -169,60 +169,17 @@ export default class Talk extends Component {
 
                             {/* <!-- 会話挿入空間 --> */}
 
-                            <div class="opponent">
-                            '   <div class="faceicon">
-                                    <img src="../" width="50" height="50" class="rounded-circle align-middle img-responsive float-left"></img><p className="name font-weight-bold m-0">開発部長</p>
-                                </div>
-                                <div class="message_box m-2">
-                                    <div class="message_content p-3">
-                                        <div class="message_text">メッセージaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-                                    </div>
-                                </div>
-                                <p class="dateTime float-right">2020/11/12</p>
-                            </div>
-                            <div class="clear"></div>
-
-
-                            <div class="myself">
-                                <div class="faceicon">
-                                    <img src="../" width="50" height="50" class="rounded-circle align-middle img-responsive float-right"></img>
-                                </div>
-                                <div class="message_box m-2">
-                                    <div class="message_content p-3">
-                                        <div class="message_text">メッセージjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-                                    </div>
-                                </div>
-                                <p class="dateTime float-left">2020/11/11</p>
-                            </div>
-                            <div class="clear"></div>
-
 
                         </div>
 
                         {/* 会話部分ここまで↑ */}
 
                         {/* 会話送信部分ここから */}
-                        <div id="review"></div>
 
-                        <div id="send" className="col p-2">
-                            <div className="form-inline col btn-mouseover">
-                                <button id="btn1" type="submit" className="btn btn-primary col-2 btn-mouseover"><a href="/video" target="_blank" rel="noopener"><i className="fas fa-video col-2"></i></a></button>
-                                <div className="mouseover__box" style={videocontext}>
-                                    <p>ビデオ通話</p>
-                                </div>
-                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2  btn-mouseover"><input id="btn2" type="file" accept="image/*"></input><i className='fas fa-folder-open'></i></label>
-                                <div className="mouseover__box" style={filecontext}>
-                                    <p>ファイルをアップロード<br></br>(イメージファイルのみ可)</p>
-                                </div>
-                                <div className="form-group col-6">
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <button id="btn3" type="submit" className="btn btn-primary col-2 btn-mouseover"><i className="fas fa-paper-plane"></i></button>
-                                <div className="mouseover__box" style={submitcontext}>
-                                    <p>送信</p>
-                                </div>
-                            </div>
+                        <div id="send">
+                            {/* ここにテキストエリアや送信ボタンを作る */}
                         </div>
+
                     </div>
                 </div>
             </div>

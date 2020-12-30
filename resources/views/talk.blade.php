@@ -266,7 +266,7 @@
         /*main-item*/
         .main-item {
             background-color: #FFFFFF;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 180px);
             width: 58vw;
             top: 80px;
             position: absolute;
@@ -329,6 +329,14 @@
             line-height: 36px;
         }
 
+
+        #send {
+            position:fixed;
+            height:100px;
+            bottom:0;
+            background-color:red;
+            width:100%;
+        }
     </style>
 
     <!-- ここにアプリのscriptタグを貼り付けます。 -->
