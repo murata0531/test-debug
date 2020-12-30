@@ -329,109 +329,17 @@
             line-height: 36px;
         }
 
-
-        /*トーク内容 */
-        .name{
-            position:relative;
-            left:30px;
-            letter-spacing: 0.3em;
-        }
-        .user-message-info {
-            display: flex;
-            height: 10%;
-        }
-
-        .messageLine {
+        .main-item .messageLine {
             overflow: auto;
             border-right: 1px solid #555;
             border-left: 1px solid #555;
         }
 
-        .opponent {
+        .main-item .opponent {
             float: left;
-            line-height: 1.5em;
-            /* width: 100%; */
+            line-height: 1.3em;
         }
 
-        .opponent .message_box {
-            max-width: 75%;
-            font-size: 17px;
-            background: #fff;
-            border: 3px solid #007A7A;
-            border-radius: 10px;
-            margin-left: 30px; 
-            position:relative;
-            left:30px;
-            padding: 6px 9px;
-            /*↓試し*/
-            margin-top: 5px;
-            display: inline-block;
-            color: #555;
-
-            /* position: relative;
-            box-sizing: border-box;
-            width: 75%;
-            border: 3px solid #007A7A;
-            min-height: 50px;
-            border-radius: 10px;
-            background-color: #fff;
-            margin: 0 auto 0 70px;
-            padding: 1em; */
-        }
-
-
-        .opponent .message_box .message_text{
-            margin: 5px;
-            padding: 3px;
-        }
-
-        .faceicon{
-            position:relative;
-            left:10px;
-            top:10px;
-            /* float:left; */
-        }
-
-        .my-faceicon{
-            position:relative;
-            /* float:right; */
-            /* left:640px; */
-            float:right;
-            right:5%;
-            /* right:10px; */
-            /* text-align: right; */
-        }
-
-        .my-faceicon > img{
-            position:relative;
-            /* left:150px; */
-            right:-225px;
-        }
-
-        .my-faceicon > p{
-            position:relative;
-            /* right:-3000px; */
-            left:100px;
-        }
-
-        .my-faceicon > .message_box {
-            /* position:relative; */
-            /* left:150px; */
-            right: 25px;
-            left: auto;
-            border: 3px solid #007A7A;
-            border-left-color: #78FF6C;
-        }
-        
-        .img-responsive{
-            display: block;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .float-left{
-            float:left;
-        }
     </style>
 
     <!-- ここにアプリのscriptタグを貼り付けます。 -->
