@@ -154,9 +154,9 @@ export default class Talk extends Component {
                                 <p class="dateTime float-left">2020/11/11</p>
                             </div>
                             <div class="clear"></div>
-                                
 
-                            
+
+
                             <div class="opponent">
                                 <div class="faceicon">
                                     <img src="..'/" width="50" height="50" class="rounded-circle align-middle img-responsive float-left"></img><p className="name font-weight-bold m-0">ai</p>
@@ -172,7 +172,7 @@ export default class Talk extends Component {
 
 
                         </div>
-                        
+
                         {/* 会話部分ここまで↑ */}
 
                         {/* 会話送信部分ここから */}
@@ -180,19 +180,19 @@ export default class Talk extends Component {
                         <div id="send" className="col p-2">
                             <div className="form-inline col">
                                 <button id="btn1" type="submit" className="btn btn-primary col-2 btn-mouseover"><a href="/video" target="_blank" rel="noopener" ><i className="fas fa-video"></i></a></button>
-                                <div className="mouseover__box" style={videocontext}>
+                                <div className="mouseover__box">
                                     <p>ビデオ通話</p>
                                 </div>
                                 {/* <!-- <button id="btn2" type="file" id="avatar" name="avatar" className="btn btn-primary col-2"><i className="fas fa-folder-open"></i></button> --> */}
-                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2 btn-mouseover"><input id="btn2" type="file" onChange={this.filehandleChange} accept="image/*"></input><i className='fas fa-folder-open'></i></label>
-                                <div className="mouseover__box" style={filecontext}>
+                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2 btn-mouseover"><input id="btn2" type="file" accept="image/*"></input><i className='fas fa-folder-open'></i></label>
+                                <div className="mouseover__box">
                                     <p>ファイルをアップロード<br></br>(イメージファイルのみ可)</p>
                                 </div>
                                 <div className="form-group col-6">
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={this.state.value} onChange={this.handleChange}></textarea>
+                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <button id="btn3" type="submit" className="btn btn-primary col-2 btn-mouseover"><i className="fas fa-paper-plane"></i></button>
-                                <div className="mouseover__box" style={submitcontext}>
+                                <div className="mouseover__box">
                                     <p>送信</p>
                                 </div>
                             </div>
