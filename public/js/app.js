@@ -66241,6 +66241,28 @@ var Talk = /*#__PURE__*/function (_Component) {
   _createClass(Talk, [{
     key: "render",
     value: function render() {
+      var videocontext = {
+        left: "2%",
+        bottom: "100%"
+      };
+      var filecontext = {
+        left: "18.5%",
+        bottom: "100%"
+      };
+      var submitcontext = {
+        left: "83.5%",
+        bottom: "100%"
+      };
+      var familycontext = {
+        left: "20px",
+        top: "0px",
+        color: "black"
+      };
+      var familysettingcontext = {
+        left: "90%",
+        top: "0px",
+        color: "black"
+      };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-menu"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -66529,7 +66551,7 @@ var Talk = /*#__PURE__*/function (_Component) {
         id: "send",
         className: "col p-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-inline col"
+        className: "form-inline col btn-mouseover"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         id: "btn1",
         type: "submit",
@@ -66539,28 +66561,33 @@ var Talk = /*#__PURE__*/function (_Component) {
         target: "_blank",
         rel: "noopener"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-video"
+        className: "fas fa-video col-2"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mouseover__box"
+        className: "mouseover__box",
+        style: videocontext
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u30D3\u30C7\u30AA\u901A\u8A71")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "btn2",
         id: "avatar",
         name: "avatar",
-        className: "btn btn-primary col-2 btn-mouseover"
+        className: "btn btn-primary col-2  btn-mouseover"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         id: "btn2",
         type: "file",
+        onChange: this.filehandleChange,
         accept: "image/*"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-folder-open"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mouseover__box"
+        className: "mouseover__box",
+        style: filecontext
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u30D5\u30A1\u30A4\u30EB\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "(\u30A4\u30E1\u30FC\u30B8\u30D5\u30A1\u30A4\u30EB\u306E\u307F\u53EF)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group col-6"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         className: "form-control",
         id: "exampleFormControlTextarea1",
-        rows: "3"
+        rows: "3",
+        value: this.state.value,
+        onChange: this.handleChange
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         id: "btn3",
         type: "submit",
@@ -66568,7 +66595,8 @@ var Talk = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-paper-plane"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mouseover__box"
+        className: "mouseover__box",
+        style: submitcontext
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u9001\u4FE1")))))));
     }
   }]);

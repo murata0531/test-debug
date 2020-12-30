@@ -329,6 +329,20 @@
             line-height: 36px;
         }
 
+
+        /* subheader部分ここまで↑ */
+            /* 会話部分ここから↓ */
+        .main-item {
+            height: calc(100vh - 80px);
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+        }
+            
+        .main-item::-webkit-scrollbar {
+            display: none;
+        }
+          
+
         .main-item .messageLine {
             overflow: auto;
             border-right: 1px solid #555;
@@ -340,6 +354,91 @@
             line-height: 1.3em;
         }
 
+        .main-item .opponent .message_box {
+            max-width: 100%;
+            font-size: 17px;
+            background: #fff;
+            border: 1px solid #999;
+            border-radius: 0px 30px 30px 30px;
+            margin-left: 50px;
+        }
+
+        .main-item .myself {
+            float: right;
+            line-height: 1.3em;
+        }
+
+        .main-item .myself .message_box {
+            max-width: 100%;
+            font-size: 17px;
+            background: #fff;
+            border: 1px solid #999;
+            border-radius: 30px 0px 30px 30px;
+            margin-right: 50px;
+        }
+
+        .message_text img {
+            width:200px;
+            height:auto;
+        }
+        .main-item .faceicon {
+            line-height: 1.3em;
+        }
+        .main-item .clear {
+            clear: both;
+        }
+        
+        .main-item #send {
+            position: absolute;
+            bottom: 0;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        .main-item #exampleFormControlTextarea1 {
+            line-height: 18px;
+            height: 60px;
+            width: 800px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2) inset;
+        }
+
+        /* 会話部分ここまで↑ */
+        /* 会話送信部分ここから↓ */
+
+        .main-item #btn1 {
+            height: 50px;
+            font-size: 30px;
+            margin: 0;
+            background-color: #9370db;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+        .main-item i {
+            color: #fff;
+        }
+        .main-item #btn2 {
+            display:none; /* アップロードボタンのスタイルを無効にする */
+        }
+        .main-item #avatar {
+            height: 50px;
+            font-size: 30px;
+            margin: 0;
+            background-color: #1e90ff;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+        .main-item #btn3 {
+            height: 50px;
+            font-size: 30px;
+            margin: 0px;
+            background-color: gray;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+        /* 会話送信部分ここまで↑ */
     </style>
 
     <!-- ここにアプリのscriptタグを貼り付けます。 -->

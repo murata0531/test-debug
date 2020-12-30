@@ -5,6 +5,33 @@ import ReactDOM from 'react-dom';
 
 export default class Talk extends Component {
     render() {
+
+        const videocontext = {
+            left: "2%",
+            bottom: "100%"
+        };
+
+        const filecontext = {
+            left: "18.5%",
+            bottom: "100%"
+        }
+
+        const submitcontext = {
+            left: "83.5%",
+            bottom: "100%"
+        }
+
+        const familycontext = {
+            left: "20px",
+            top: "0px",
+            color: "black"
+        }
+
+        const familysettingcontext = {
+            left: "90%",
+            top: "0px",
+            color: "black"
+        }
         return (
 
             <div className="main-menu">
@@ -177,22 +204,22 @@ export default class Talk extends Component {
 
                         {/* 会話送信部分ここから */}
                         <div id="review"></div>
+
                         <div id="send" className="col p-2">
-                            <div className="form-inline col">
-                                <button id="btn1" type="submit" className="btn btn-primary col-2 btn-mouseover"><a href="/video" target="_blank" rel="noopener" ><i className="fas fa-video"></i></a></button>
-                                <div className="mouseover__box">
+                            <div className="form-inline col btn-mouseover">
+                                <button id="btn1" type="submit" className="btn btn-primary col-2 btn-mouseover"><a href="/video" target="_blank" rel="noopener"><i className="fas fa-video col-2"></i></a></button>
+                                <div className="mouseover__box" style={videocontext}>
                                     <p>ビデオ通話</p>
                                 </div>
-                                {/* <!-- <button id="btn2" type="file" id="avatar" name="avatar" className="btn btn-primary col-2"><i className="fas fa-folder-open"></i></button> --> */}
-                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2 btn-mouseover"><input id="btn2" type="file" accept="image/*"></input><i className='fas fa-folder-open'></i></label>
-                                <div className="mouseover__box">
+                                <label htmlFor="btn2" id="avatar" name="avatar" className="btn btn-primary col-2  btn-mouseover"><input id="btn2" type="file" onChange={this.filehandleChange} accept="image/*"></input><i className='fas fa-folder-open'></i></label>
+                                <div className="mouseover__box" style={filecontext}>
                                     <p>ファイルをアップロード<br></br>(イメージファイルのみ可)</p>
                                 </div>
                                 <div className="form-group col-6">
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={this.state.value} onChange={this.handleChange}></textarea>
                                 </div>
                                 <button id="btn3" type="submit" className="btn btn-primary col-2 btn-mouseover"><i className="fas fa-paper-plane"></i></button>
-                                <div className="mouseover__box">
+                                <div className="mouseover__box" style={submitcontext}>
                                     <p>送信</p>
                                 </div>
                             </div>
