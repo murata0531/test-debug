@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
         <!-- Fonts -->
@@ -10,195 +10,80 @@
 
         <!-- Styles -->
         <style>
-            body {
-                /*font-family: 'Nunito';*/
-                color: #141414;
-                font-size: 18px;
-                letter-spacing: 0.05em;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: 'Roboto', sans-serif, 'Noto Sans JP', sans-serif;
-            }
-
-            html{
-                color: #000;
-                background: #fff;
-            }
-
-            li{
-                /*listの先頭の記号を無効にする */
-                list-style: none;
-            }
-
-            a{
-                text-decoration: none;
-                color: #fff;
-            }
-
-            /*header*/
-            .header{
-                background-color: #1b1310;
-                color: #fff;
-                height: 74px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                /*上下：０｜左右：120pxの余白 */
-                padding: 0 120px;
-                /*下線 */
-                border-bottom: 1px solid #fff;
-            }
-
-            .nav-list{
-                /*navの横並び */
-                display: flex;
-            }
-
-            .nav-item{
-                /*メニューの右側に余白 */
-                margin-right: 55px;
-            }
-
-            /*fv(ファーストビュー)*/
-            .fv{
-                height: 90vh;
-                background-color: #141414;
-                /*メインコピーの上下左右中央寄せ*/
-                display: flex;
-                /*アイテムを中央に寄せる*/
-                justify-content: center;
-                /*コンテナ内のアイテムを中央に寄せる*/
-                align-items: center;
-                /*積み重なるように配置*/
-                flex-direction: column;
-            }
-
-            .main-copy{
-                font-size: 5rem;
-                color: #fff;
-                font-weight: bold;
-                border: 2px solid #fff;
-                padding: 34px 42px
-            }
-
-            /*service・news*/
-            .section-title{
-                text-align: center;
-            }
-
-            .section-wrapper{
-                /*上｜左右｜下*/
-                padding: 100px 15% 50px;
-            }
-
-            .text-wrapper-service{
-                width: 480px;
-                height: 280px;
-                text-align: left;
-                margin-top: 40px;
-                
-            }
             
-          
-            .content-inner{
-                /* flex-wrap: wrap; */
-                display: flex;
-                width: 1030px;
-                height: 280px;
-                margin-top: 20px;
+            *{
+                margin: 0;
+                padding: 0;
             }
-
-            .reverce{
-                display: flex;
-                justify-content: space-between;
-                line-height:40px;
-            }
-
-            /*news*/
-            .card-list{
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .card-item{
-                margin: 50px 0 0;
+            body{
+                top: 0px;
+                left: 0px;
+                width: 1920px;
+                min-height: 100vh;    
+                background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
-                box-shadow: 0px 0px 6px #1B131066;
-                height: 350px;
-                width: 320px;
+                opacity: 1;
             }
-
-            .text-news{
-                color: black;
+            ​
+            ​
+            .left_all{
+                min-height: 100vh;
+                width: 18vw;
+                background: var(--unnamed-color-62abb6) 0% 0% no-repeat padding-box;
+                background: #62ABB6 0% 0% no-repeat padding-box;
+                opacity: 1;
             }
-
-            .news-position{
-                position: relative;
-                text-align: left;
-            }
-
-            /*contact*/
-            .form{
-                max-width: 700px;
-                margin: 0 auto;
-            }
-
-            input, textarea{
-                border: 1px solid #141414;
-                padding: 10px;
-            }
-
-            .form-part{
+            ​
+            ​
+            .test{
                 display: flex;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
-                margin-top: 25px;
+                height: 100%;
+                padding-bottom: 9px;
+                pointer-events: auto;
+                overflow-x: hidden;
+                overflow-y: auto;
             }
-
-            label{
-                margin-bottom: 5px;
+            ​
+            .nav-list{
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: 100%;
+                list-style-type: none;
             }
-
-            #input-subject, textarea[
-                line-height: 2;
-                font-size: 1.6rem;
-            ]
-
-            textarea{
-                resize: none;
-                height: 171px;
-            }
-
-            .form-send{
-                text-align: center;
-                margin-top: 50px;
-            }
-
-            .form-btn{
-                display: inline-block;
-                width: 235px;
-                padding: 20px 30px;
-                /*ボックスの４つのコーナーの角丸をまとめて指定する*/
-                border-radius: 30px;
-                font-size: 2rem;
-                font-weight: bold;
-                text-align: center;
-                color: #fff;
-                background-color: #1b1310;
-                box-shadow: 0px 0px 6px #1b1310;
-            }
-
-            .reverce-img {
-                width: 480px;
-                height: 240px;
+            ​
+            .nav-list li{
+                vertical-align: middle; 
+            } 
+            ​
+            /*  *, ::after, ::before {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box; 
+            } */
+            ​
+            .left1{
+                position: relative;
+                height: 8vh;
+                padding-left: 3vw;
+                position: relative;
+                color: var(--unnamed-color-ffffff);
+                font: normal normal normal 24px/38px Noto Sans JP;
+                letter-spacing: 2.4px;
+                color: #FFFFFF;
+                opacity: 1;
             }
 
         </style>
     </head>
 
     <body>
-        <div id="example"></div>
-        <script src="{{asset('/js/app.js')}}">
         
-        </script>
     </body>
 </html>

@@ -20,7 +20,6 @@
             margin: 0px;
             padding: 0px;
     }
-
         html,
         body {
             display: flex;
@@ -34,13 +33,11 @@
             font-family: 'Noto Sans JP', sans-serif;
             position: fixed;
         }
-
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
         li a {
             height: 50px;
             width: 100%;
@@ -51,22 +48,18 @@
             text-decoration: none;
             padding-left: 20px;
         }
-
         /*サイドメニュー*/
         .side-menu {
             width: 18vw;
             height: 100vh;
             background-color: #62ABB6;
         }
-
         .side-menu>ul>li>a {
             display: flex;
             display:-webkit-box;
   	        display:-ms-flexbox;
             align-items: center;
-
         }
-
         /*main-menu: folder +  main-contents*/
         .main-menu {
             display: flex;
@@ -75,7 +68,6 @@
             height: 100vh;
             width: calc(100vw - 18vw);
         }
-
         /*トーク一覧*/
         .folder-menu {
             width: 24vw;
@@ -86,7 +78,6 @@
             overflow-x: hidden;
             border: solid #E0E0E0 1px;
         }
-
         .search-text {
             height: 40px;
             width: calc(24vw - 80px);
@@ -97,7 +88,6 @@
             font-family: "Font Awesome 5 Free", 'Noto Sans JP', 'sans-serif';
             font-weight: 600;
         }
-
         .folder-list {
             position: fixed;
             height: calc(100vh - 40px);
@@ -105,7 +95,6 @@
             width: 24vw;
             overflow-x: scroll;
         }
-
         .folder-list>li {
             border: solid 1px white;
             height: 80px;
@@ -118,7 +107,6 @@
 	        -ms-flex-align: center;
             background-color: #e9f2f3;
         }
-
         .user-icon {
             height: 30px;
             width: 35px;
@@ -127,12 +115,10 @@
             background: #FFFFFF;
             text-align: center;
         }
-
         .user-icon > .fa-user {
             position: relative;
             top: 4px;
         }
-
         .user-text {
             position: relative;
             height: 100%;
@@ -142,7 +128,6 @@
             justify-content: space-around;
             -ms-flex-pack: distribute;
         }
-
         .text-list {
             display: flex;
             display:-webkit-box;
@@ -150,8 +135,6 @@
             position: relative;
             /* top: 15px; */
         }
-
-
         .date {
             color: #8aa0a0;
             font-size: 12px;
@@ -159,13 +142,11 @@
             left: 155px;
             top: 5px;
         }
-
         .talk-list {
             width: 100%;
             position: relative;
             bottom: 10px;
         }
-
         .talk-list>input {
             height: 10px;
             width: 15vw;
@@ -173,7 +154,6 @@
             position: relative;
             top: 13px;
         }
-
         .talk-list>.talk-circle {
             width: 20px;
             height: 20px;
@@ -187,14 +167,12 @@
             bottom: 10px;
             
         }
-
         /*main-contents: header + main-items*/
         .main-contents {
             height: 100vh;
             width: 58vw;
             background-color: gray;
         }
-
         .my-header {
             width: 40vw;
             height: 80px;
@@ -206,7 +184,6 @@
             margin-left: 0;
             position: fixed;
         }
-
         .account-settings {
             width: 20vw;
             height: 80px;
@@ -218,41 +195,31 @@
             justify-content: center;
             top: 0px;
             position: fixed;
-
             /* width:30%;
             background-color:blue; */
         }
-
         .account-settings>.my-header-items-section>a {
             color: #8AA0A0;
         }
-
         .account-settings>.my-header-items-section>p {
             color: #8AA0A0;
             font-size: 12px;
         }
-
-
         .my-header-title {
             width: 40%;
             background-color: #e9f2f3;
             margin-top: 20px;
             margin-left: 10px;
-
             /* width:40%;
             background-color:#e9f2f3; */
         }
-
         h5{
              color:#62ABB6;
         }
-
         h6{
             margin-top:10px;
             color:#8AA0A0;
         }
-
-
         .my-header-items {
             display:flex;
             display:-webkit-box;
@@ -262,7 +229,6 @@
             /* width:60%;
             background-color:#40px; */
         }
-
         .my-header-items-section {
             display: flex;
             display:-webkit-box;
@@ -272,16 +238,13 @@
             align-items: center;
             margin-top: 10px;
         }
-
         .my-header-items >.my-header-items-section > .circle {
             background-color: #00B7B7;
             color: #fff;
         }
-
         .my-header-items > .my-header-items-section > p {
             font-size: 12px;
         }
-
         /*main-item*/
         .main-item {
             background-color: #FFFFFF;
@@ -292,9 +255,6 @@
             overflow-y: scroll;
             overflow-x: hidden;
         }
-
-
-
         /* .maru {
             display: inline-flex;
             justify-content: center;
@@ -331,7 +291,6 @@
             height: 20px;
             top: 30%;
         }
-
         .circle {
             /* width: 20px;
             height: 20px;
@@ -349,8 +308,6 @@
             text-align: center;
             line-height: 36px;
         }
-
-
         #send {
             position:fixed;
             height:100px;
