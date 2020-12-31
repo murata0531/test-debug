@@ -74,13 +74,21 @@
             height: 100vh;
             background-color: #CCE3E3;
             color: #007a7a;
-            overflow-y: scroll;
-            overflow-x: hidden;
+
             border: solid #E0E0E0 1px;
         }
+
+        .search-back {
+            position:relative;;
+            top:0px;
+            height:80px;
+            width:100%;
+        }
+
         .search-text {
-            height: 40px;
-            width: calc(24vw - 80px);
+            position:relative;
+            height: 40%;
+            width: 80%;
             margin: 20px 40px;
             border: none;
             border-radius: 4px;
@@ -89,10 +97,9 @@
             font-weight: 600;
         }
         .folder-list {
-            position: fixed;
-            height: calc(100vh - 40px);
-            top: 80px;
-            width: 24vw;
+            position: relative;
+            height: calc(100%  - 80px);
+            width: 100%;
             overflow-x: scroll;
         }
         .folder-list>li {
@@ -255,33 +262,7 @@
             overflow-y: scroll;
             overflow-x: hidden;
         }
-        /* .maru {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            flex-flow: column; 
-            vertical-align: top;
-            background-color:red;
-            position:relative;
-            left:10px;
-        }
-        /* 円の大きさ */
-        /* .size_normal{
-            width: 20px;
-            height: 20px;
-        } */
-        /* 文字の大きさ */
-        /* .letter3 {
-            font-size: 15px;
-            line-height: 7px;
-        } */
-        /* 円と文字の色 */
-        /* .pink1 {
-            color: black;
-            border: 2px solid red;
-            bakground-color:red;
-        } */
+        
         .inner-circle {
             display: flex;
             display:-webkit-box;
