@@ -176,6 +176,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
+            -webkit-border-radius:50%;
             background: #E47E7E;
             text-align: center;
             color: white;
@@ -200,7 +201,6 @@
             display:-webkit-box;
   	        display:-ms-flexbox;
             margin-left: 0;
-            position: fixed;
         }
         .account-settings {
             width: 20vw;
@@ -243,6 +243,9 @@
             display:-webkit-box;
   	        display:-ms-flexbox;
             flex-flow:row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row;
             width:60%;
             /* width:60%;
             background-color:#40px; */
@@ -274,7 +277,7 @@
             overflow-x: hidden;
         }
         
-        .inner-circle {
+        /* .inner-circle {
             display: flex;
             display:-webkit-box;
   	        display:-ms-flexbox;
@@ -282,7 +285,7 @@
             position: relative;
             height: 20px;
             top: 30%;
-        }
+        } */
         .circle {
             /* width: 20px;
             height: 20px;
@@ -293,12 +296,14 @@
             position:relative;
             bottom:13px;
             left:255px; */
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: white;
             text-align: center;
             line-height: 36px;
+            -webkit-border-radius:50%;
+            display:block;
         }
         #send {
             position:fixed;
