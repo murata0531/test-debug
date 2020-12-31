@@ -20,8 +20,7 @@
             margin: 0px;
             padding: 0px;
     }
-        html,
-        body {
+        html,body {
             display: flex;
             display:-webkit-box;
   	        display:-ms-flexbox;
@@ -74,7 +73,6 @@
             height: 100vh;
             background-color: #CCE3E3;
             color: #007a7a;
-
             border: solid #E0E0E0 1px;
         }
 
@@ -83,13 +81,15 @@
             top:0px;
             height:80px;
             width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
         }
 
         .search-text {
             position:relative;
             height: 40%;
             width: 80%;
-            margin: 20px 40px;
             border: none;
             border-radius: 4px;
             color: #00697A;
@@ -100,8 +100,11 @@
             position: relative;
             height: calc(100%  - 80px);
             width: 100%;
-            overflow-x: scroll;
+            overflow-y:scroll;
+            -ms-overflow-style: none;    /* IE, Edge 対応 */
+            scrollbar-width: none;       /* Firefox 対応 */
         }
+
         .folder-list>li {
             border: solid 1px white;
             height: 80px;
@@ -113,7 +116,15 @@
             -webkit-box-align: center;
 	        -ms-flex-align: center;
             background-color: #e9f2f3;
+            overflow-x:scroll;
+            -ms-overflow-style: none;    /* IE, Edge 対応 */
+            scrollbar-width: none;       /* Firefox 対応 */
         }
+
+        .folder-list::-webkit-scrollbar,.folder-list > li::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+            display:none;
+        }
+
         .user-icon {
             height: 30px;
             width: 35px;
