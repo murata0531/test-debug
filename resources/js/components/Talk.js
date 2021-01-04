@@ -178,6 +178,10 @@ export default class Talk extends Component {
 
                         <div id="send">
                             {/* ここにテキストエリアや送信ボタンを作る */}
+                            <textarea></textarea>
+                            {/* <div class="button-area">
+                            </div> */}
+                            <button type="submit" class="sendBt"><i class="fab fa-telegram-plane"></i></button>
                         </div>
 
                     </div>

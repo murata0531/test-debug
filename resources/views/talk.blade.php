@@ -252,8 +252,8 @@
         }
         .my-header-items-section {
             display: flex;
-            display:-webkit-box;
-  	        display:-ms-flexbox;
+            /* display:-webkit-box;
+  	        display:-ms-flexbox; */
             flex-flow: column wrap;
             margin-right:10px;
             align-items: center;
@@ -270,7 +270,7 @@
         .main-item {
             background-color: #FFFFFF;
             height: calc(100vh - 180px);
-            width: 58vw;
+            width: 57.8vw;
             top: 80px;
             position: absolute;
             overflow-y: scroll;
@@ -305,12 +305,54 @@
             -webkit-border-radius:50%;
             display:block;
         }
+
+        /*メッセージ入力欄*/
+        #send > textarea{
+            /* width: 53%; */
+            width:calc(100%-70px);
+            /* height: calc(100vh - 180px); */
+            height:100%;
+            min-width: 20%;
+            min-height: 100%;
+            max-width:100%;
+            /* resize: vertical; */
+            overflow:auto;
+            border:2px #E0E0E0 solid;
+        }
+
+        /* .button-area{
+            text-align:center;
+        } */
+
+        #send > button {
+            text-align: center;
+            background: #6FD8BB;
+            width: 70px;
+            height:100px;
+            vertical-align:top;
+            border:transparent;
+            position:fixed;
+        }
+
+        /* .sendBt{
+            vertical-align: center;
+            background: #6FD8BB;
+            width:50px;
+            height:10px;
+        } */
+        .fa-telegram-plane{
+            font-size:50px;
+            color:white;
+        }
         #send {
             position:fixed;
+            display: flex;
+            display:-webkit-box;
+  	        display:-ms-flexbox;
             height:100px;
             bottom:0;
-            background-color:red;
-            width:100%;
+            /* background-color:red; */
+            width:57.8vw;
         }
     </style>
 
